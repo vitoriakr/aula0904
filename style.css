@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(234, 181, 181);
+    font-size: 20px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 10px;
+}
+
+.max{
+
+    background-color: rgb(138, 219, 195);
+
+}
+
+.max h1{
+     /*font-size: 20px;*//*tamanho comum, problemas de quebra de texto*/
+    /*font-size: 2vw;*/ /*o texto se adapta ao tamanho do visor, porém pode haver fonte ilegível*/
+    font-size: max(20px,2vw);/*pega o menor valor entre os dois*/
+}
+
+.min{
+    background-color: rgb(158, 121, 180);
+}
+
+.min h1{
+    /*font-size: 60px;*//*tamanho comum, problemas de quebra de texto*/
+    /*font-size: 6vw;*//*o texto se adapta ao tamanho do visor, porém pode haver fonte ilegível*/
+    font-size: min(60px,6vw);/*pega o maior valor entre os dois*/
+}
+
